@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
     <title>Welcome to Kelly's Portfolio</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
             <div class="bar half end"></div>
         </div>
         <nav class="top-nav">
-            <ul class="navigation">
+            <ul class="nav-list">
                 <li>
                     <a href="index.html" class="navigation-link">Home</a>
                 </li>
@@ -49,7 +49,7 @@
     <section class="about" id="about">
         <div class="contain">
             <div class="profile-image">
-                <img src="" alt="">
+                <img src="images/splash_1.jpg" alt="">
             </div>
             <div class="about-details">
                 <div class="about-heading">
@@ -83,9 +83,152 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="services" id="services">
+        <div class="contain">
+            <div class="section-heading">
+                <h1>Skills</h1>
+                <h6>Ruby, Javascript</h6>
+            </div>
+            <div class="my-skills">
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h1>Web Design</h1>
+                    <p>
+                        Hello, My Name is Kelly Ku
+                        Hello, My Name is Kelly Ku
+                        Hello, My Name is Kelly Ku
+                    </p>
+                </div>
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-code-group"></i>
+                    </div>
+                    <h1>Web Development</h1>
+                    <p>
+                        Hello, My Name is Kelly Ku
+                        Hello, My Name is Kelly Ku
+                        Hello, My Name is Kelly Ku
+                    </p>
+                </div>
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-chart-group"></i>
+                    </div>
+                    <h1>Product Strategy</h1>
+                    <p>
+                        Hello, My Name is Kelly Ku
+                        Hello, My Name is Kelly Ku
+                        Hello, My Name is Kelly Ku
+                    </p>
+                </div>
+            </div>
+        </div>
         
     </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="contain">
+            <div class="section-heading">
+                <h1>Portfolio</h1>
+                <h6>View seom of my recent work</h6>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-description">
+                    <h6>Web Design</h6>
+                    <h1>Product Layout</h1>
+                    <p>
+                        Hello, My Name is Kelly Ku
+                        Hello, My Name is Kelly Ku
+                    </p>
+                    <a href="#" class="cta">View Details</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="images/splash_1.jpg" alt="">
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="images/splash_1.jpg" alt="">
+                </div>
+                <div class="portfolio-description">
+                    <h6>Web Design</h6>
+                    <h1>Product Sketch</h1>
+                    <p>
+                        Hello, My Name is Kelly Ku
+                        Hello, My Name is Kelly Ku
+                    </p>
+                    <a href="#" class="cta">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="experience" id="experience">
+        <div class="contain">
+            <div class="section-heading">
+                <h1>Work Experience</h1>
+                <h6>Past and current jobs</h6>
+            </div>
+            <div class="timeline">
+                <ul>
+                    <li class="date" data-date="2011 - Present">
+                        <h1>Google</h1>
+                        <p>
+                            Hello, My Name is Kelly Ku
+                            Hello, My Name is Kelly Ku
+                        </p>
+                    </li>
+                    <li class="date" data-date="2008 - 2011">
+                        <h1>Google</h1>
+                        <p>
+                            Hello, My Name is Kelly Ku
+                            Hello, My Name is Kelly Ku
+                        </p>
+                    </li>
+                    <li class="date" data-date="2002 - 2007">
+                        <h1>Google</h1>
+                        <p>
+                            Hello, My Name is Kelly Ku
+                            Hello, My Name is Kelly Ku
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contain">
+            <div class="section-heading">
+                <h1>Contact</h1>
+                <h6>Let's work together</h6>
+            </div>
+        </div>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter Your Email" required>
+            
+            <label for="service">Servives:</label>
+            <select name="services" id="service">
+                <option value="">Ruby</option>
+                <option value="">JavaScript</option>
+                <option value="">React</option>
+            </select>
+
+            <label for="subject">Subject:</label>
+            <textarea name="subject" id="subject" cols="30" rows="10"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section> 
+    <footer class="copyright">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+            <p>&copy; 2019 Kelly Ku</p>
+        </div>
+    </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
