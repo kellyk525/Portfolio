@@ -81,17 +81,39 @@ header {
   .menu-nav .bar.start {
     transform-origin: right;
     transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.5); }
-  .menu-nav .open .bar.start {
-    transform: rotate(-450deg) translateX(0.8rem); }
   .menu-nav .bar.end {
     align-self: flex-end;
     transform-origin: left;
     transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.5); }
-  .menu-nav .open .bar.end {
-    transform: rotate(-450deg) translateX(-0.8rem); }
+
+.open .bar.start {
+  transform: rotate(-450deg) translateX(0.8rem); }
+
+.open .bar.end {
+  transform: rotate(-450deg) translateX(-0.8rem); }
 
 .menu-nav.open {
   transform: rotate(-45deg); }
+
+.entry-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1; }
+  .entry-text h1 {
+    font-size: 20rem;
+    font-family: sans-serif;
+    background: grey;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    user-select: none; }
+  .entry-text h6 {
+    font-size: 2rem;
+    font-weight: 300; }
 
 .social-link {
   font-size: 18px;
