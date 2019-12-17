@@ -11,7 +11,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: url("../images/sitebg.jpg") no-repeat center fixed;
+  background: url("../images/background.jpeg") no-repeat center fixed;
   background-size: cover; }
 
 section {
@@ -148,13 +148,14 @@ header {
   text-align: center;
   z-index: 1; }
   .entry-text h1 {
-    font-size: 20rem;
-    font-family: sans-serif;
-    background: grey;
+    font-size: 15rem;
+    font-family: 'Amatic SC';
+    background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
-    user-select: none; }
+    user-select: none;
+    font-weight: 400; }
   .entry-text h6 {
     font-size: 2rem;
     font-weight: 300; }

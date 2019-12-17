@@ -1,5 +1,5 @@
 $primary-color: black;
-$background: url("../images/sitebg.jpg");
+$background: url("../images/background.jpeg");
 
 * {
     margin: 0;
@@ -200,13 +200,14 @@ header {
     z-index: 1;
 
     h1 {
-        font-size: 20rem;
-        font-family: sans-serif;
-        background: grey;
+        font-size: 15rem;
+        font-family: 'Amatic SC';
+        background: white;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         padding: 1rem;
         user-select: none;
+        font-weight: 400;
     }
 
     h6 {
@@ -316,6 +317,7 @@ header {
                 margin: auto;
                 transform: rotate(-45deg);
             }
+            
         }
     }
 }
