@@ -2,9 +2,14 @@
 
 .my-skills {
     margin-top: 10rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 2.5rem;
+    max-width: 1200px;
+    // background: red;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    // grid-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
 
     .skill {
@@ -12,28 +17,36 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 2rem;
+        padding: 0.3rem;
+        padding-bottom: 0rem;
+        padding-top: 0rem;
 
         h1 {
             text-transform: uppercase;
             letter-spacing: 2px;
+            font-weight: 300;
+            font-family: Assistant;
+            font-size: 13px;
             margin: 2rem -2px 2rem 0;
         }
 
         .icon-container {
-            width: 10rem;
-            height: 10rem;
-            border: 3px solid white;
-            background-color: rgb(186, 63, 63);
-            margin-bottom: 2rem;
+            width: 17rem;
+            height: 17rem;
+            // border: 3px solid white;
+            // background-color: rgb(186, 63, 63);
+            background: black;
+            margin-bottom: 0.6rem;
             display: flex;
-            transform: rotate(-45deg);
+            flex-direction: column;
+            border-radius: 2px;
+            // transform: rotate(-45deg);
 
             i {
                 color: white;
                 font-size: 5rem;
                 margin: auto;
-                transform: rotate(-45deg);
+                // transform: rotate(-45deg);
             }
 
         }

@@ -26,6 +26,7 @@
 
     .about-details {
         flex: 1;
+        font-family: Assistant;
 
         .about-heading {
             text-align: center;
@@ -36,11 +37,14 @@
             h1 {
                 font-size: 10rem;
                 opacity: 0.3;
+                font-family: Playfair Display;
+    
             }
     
             h6 {
                 font-size: 2rem;
                 font-weight: 300;
+                color: black;
             }
         }
 

@@ -34,10 +34,12 @@ p {
 
 .section-heading {
   text-align: center;
-  margin-bottom: 10rem; }
+  margin-bottom: 10rem;
+  font-family: Assistant; }
   .section-heading h1 {
-    font-size: 3.5rem;
-    color: rgba(255, 255, 255, 0.3);
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: rgba(18, 17, 17, 0.76);
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
@@ -49,16 +51,7 @@ p {
     bottom: -.5rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.75); }
-  .section-heading h1::before {
-    width: 10rem;
-    height: 3px;
-    border-radius: 0.8rem; }
-  .section-heading h1::after {
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 100%;
-    bottom: -1rem; }
+    background-color: rgba(20, 18, 18, 0.75); }
   .section-heading h6 {
     font-size: 1.6rem;
     font-weight: 300; }
@@ -151,33 +144,6 @@ p {
   width: 1.5rem;
   background-color: #313534; }
 
-.contact {
-  background-color: #221e3f; }
-  .contact form {
-    width: 70%;
-    margin: 0 auto; }
-    .contact form label {
-      font-size: 1.5rem; }
-    .contact form input,
-    .contact form select,
-    .contact form textarea {
-      width: 100%;
-      padding: 1rem;
-      margin-bottom: 5px;
-      border: none;
-      outline-color: #fd57bf; }
-    .contact form input[type="submit"] {
-      width: initial;
-      background-color: #fd57bf;
-      color: #eee;
-      padding: 1rem 2rem;
-      border-radius: 0.8rem;
-      cursor: pointer;
-      transition: background-color 650ms; }
-    .contact form input[type="submit"]:hover {
-      color: #221e3f;
-      background-color: #ffe838; }
-
 .copyright {
   width: 100%;
   text-align: center;
@@ -205,11 +171,11 @@ p {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99); }
+    box-shadow: 0 0 0 0 rgba(18, 11, 19, 0.99); }
   70% {
-    box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0); }
+    box-shadow: 0 0 0 2rem rgba(18, 11, 19, 0); }
   100% {
-    box-shadow: 0 0 0 0 rgba(253, 87, 191, 0); } }
+    box-shadow: 0 0 0 0 rgba(18, 11, 19, 0); } }
 
 @media screen and (max-width: 768px) {
   body {
@@ -222,16 +188,25 @@ p {
   .entry-text h6 {
     font-size: 1.7rem; }
   .nav-list {
-    flex-direction: row; }
+    flex-direction: column; }
     .nav-list li {
       margin: 2rem 0; }
       .nav-list li .navigation-link {
-        font-size: 4.5rem; }
+        font-size: 12px;
+        letter-spacing: 2.5px;
+        color: white;
+        font-weight: 400;
+        font-family: Assistant;
+        text-transform: uppercase; }
+  .nav-list-social {
+    flex-direction: row; }
+    .nav-list-social li {
+      margin: 2rem 0; }
   .about-heading h1 {
     font-size: 8rem; }
   .section-heading h1 {
     font-size: 3rem; }
-  .about-details .nav-list {
+  .about-details .nav-list-social {
     flex-direction: initial; }
   .about-details li {
     margin: 0 2rem; }
@@ -294,7 +269,8 @@ p {
     border-radius: 5px; }
 
 .contain .about-details {
-  flex: 1; }
+  flex: 1;
+  font-family: Assistant; }
   .contain .about-details .about-heading {
     text-align: center;
     text-transform: uppercase;
@@ -302,10 +278,12 @@ p {
     margin-bottom: 6rem; }
     .contain .about-details .about-heading h1 {
       font-size: 10rem;
-      opacity: 0.3; }
+      opacity: 0.3;
+      font-family: Playfair Display; }
     .contain .about-details .about-heading h6 {
       font-size: 2rem;
-      font-weight: 300; }
+      font-weight: 300;
+      color: black; }
   .contain .about-details .social-media i {
     font-size: 19px;
     transition: color 650ms; }
@@ -323,13 +301,12 @@ header {
   height: 100vh; }
 
 .top-nav {
-  width: 100%;
-  height: 100vh;
+  width: 200px;
+  height: 50vh;
   position: fixed;
   top: -100vh;
+  right: 0;
   background-color: #16162d;
-  border-bottom-right-radius: 100%;
-  border-bottom-left-radius: 100%;
   transition: all 650ms cubic-bezier(1, 0, 0, 1); }
 
 .nav-list {
@@ -337,7 +314,7 @@ header {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center; }
   .nav-list li {
@@ -362,8 +339,8 @@ header {
   position: absolute;
   top: 5rem;
   right: 5rem;
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -371,28 +348,13 @@ header {
   z-index: 1500;
   transition: transform 650ms ease-out; }
   .menu-nav .bar {
-    background: linear-gradient(to right, blue, green);
+    background: white;
     width: 100%;
-    height: 4px;
+    height: 3px;
     border-radius: 0.8rem; }
-  .menu-nav .bar.half {
-    width: 50%; }
-  .menu-nav .bar.start {
-    transform-origin: right;
-    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.5); }
-  .menu-nav .bar.end {
-    align-self: flex-end;
-    transform-origin: left;
-    transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.5); }
-
-.open .bar.start {
-  transform: rotate(-450deg) translateX(0.8rem); }
-
-.open .bar.end {
-  transform: rotate(-450deg) translateX(-0.8rem); }
 
 .menu-nav.open {
-  transform: rotate(-45deg); }
+  transform: rotate(-180deg); }
 
 .entry-text {
   position: absolute;
@@ -404,7 +366,7 @@ header {
   z-index: 1; }
   .entry-text h1 {
     font-size: 15rem;
-    font-family: 'Amatic SC';
+    font-family: 'Playfair Display';
     background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -414,37 +376,92 @@ header {
   .entry-text h6 {
     font-size: 2rem;
     font-weight: 300; }
-  .entry-text .nav-list {
+  .entry-text .nav-list-social {
     font-size: 19px; }
-    .entry-text .nav-list .fab:hover {
+    .entry-text .nav-list-social .fab:hover {
       color: #4267b2; }
+
+.nav-list-social {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .nav-list-social li {
+    margin: 1rem 2rem;
+    color: black; }
 
 .my-skills {
   margin-top: 10rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 2.5rem;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center; }
   .my-skills .skill {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem; }
+    padding: 0.3rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem; }
     .my-skills .skill h1 {
       text-transform: uppercase;
       letter-spacing: 2px;
+      font-weight: 300;
+      font-family: Assistant;
+      font-size: 13px;
       margin: 2rem -2px 2rem 0; }
     .my-skills .skill .icon-container {
-      width: 10rem;
-      height: 10rem;
-      border: 3px solid white;
-      background-color: #ba3f3f;
-      margin-bottom: 2rem;
+      width: 17rem;
+      height: 17rem;
+      background: black;
+      margin-bottom: 0.6rem;
       display: flex;
-      transform: rotate(-45deg); }
+      flex-direction: column;
+      border-radius: 2px; }
       .my-skills .skill .icon-container i {
         color: white;
         font-size: 5rem;
-        margin: auto;
-        transform: rotate(-45deg); }
+        margin: auto; }
+
+.contact {
+  background-color: white; }
+  .contact form {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px; }
+    .contact form label {
+      font-size: 1.5rem; }
+    .contact form input,
+    .contact form select,
+    .contact form textarea {
+      width: 100%;
+      padding: 2rem 1rem;
+      margin-bottom: 5px;
+      border: none;
+      outline-color: #f2e7ee;
+      font-size: 20px; }
+    .contact form input[type="submit"] {
+      width: initial;
+      background-color: #fd57bf;
+      color: #eee;
+      padding: 1rem 2rem;
+      border-radius: 0.8rem;
+      cursor: pointer;
+      transition: background-color 650ms; }
+    .contact form input[type="submit"]:hover {
+      color: #221e3f;
+      background-color: #ffe838; }
+    .contact form ::placeholder {
+      font-size: 16px;
+      font-family: Assistant;
+      letter-spacing: 1px; }
+    .contact form input:focus {
+      font-size: 16px;
+      font-family: Assistant;
+      letter-spacing: 1px;
+      color: grey; }

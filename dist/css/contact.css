@@ -1,0 +1,37 @@
+.contact {
+  background-color: white; }
+  .contact form {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px; }
+    .contact form label {
+      font-size: 1.5rem; }
+    .contact form input,
+    .contact form select,
+    .contact form textarea {
+      width: 100%;
+      padding: 2rem 1rem;
+      margin-bottom: 5px;
+      border: none;
+      outline-color: #f2e7ee;
+      font-size: 20px; }
+    .contact form input[type="submit"] {
+      width: initial;
+      background-color: #fd57bf;
+      color: #eee;
+      padding: 1rem 2rem;
+      border-radius: 0.8rem;
+      cursor: pointer;
+      transition: background-color 650ms; }
+    .contact form input[type="submit"]:hover {
+      color: #221e3f;
+      background-color: #ffe838; }
+    .contact form ::placeholder {
+      font-size: 16px;
+      font-family: Assistant;
+      letter-spacing: 1px; }
+    .contact form input:focus {
+      font-size: 16px;
+      font-family: Assistant;
+      letter-spacing: 1px;
+      color: grey; }
