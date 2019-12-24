@@ -59,6 +59,40 @@ p {
 .has-margin-right {
   margin-right: 5rem; }
 
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem; }
+  .portfolio-item .portfolio-img {
+    flex: 1; }
+    .portfolio-item .portfolio-img img {
+      width: 100%;
+      height: 100%; }
+  .portfolio-item .portfolio-description {
+    flex: 1; }
+    .portfolio-item .portfolio-description h1 {
+      font-size: 3rem;
+      font-weight: 300;
+      margin: 1rem 0; }
+    .portfolio-item .portfolio-description h6 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 300;
+      opacity: 0.3; }
+  .portfolio-item .portfolio-description .cta {
+    display: inline-block;
+    margin: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #3883ff;
+    transition: color 650ms; }
+  .portfolio-item .portfolio-description .cta:hover {
+    color: #2f67cd; }
+
+.portfolio-item:last-child {
+  margin-bottom: 0; }
+
 .timeline ul {
   border-left: 4px solid #ffe838;
   border-radius: 0.8rem;
@@ -234,14 +268,6 @@ p {
     height: 40%;
     border-radius: 5px; }
 
-.contain .contact-kelly {
-  flex: 1;
-  margin-right: 5rem;
-  background: red;
-  display: flex;
-  justify-content: center;
-  flex-direction: row; }
-
 .contain .about-details {
   flex: 1;
   font-family: Assistant; }
@@ -404,67 +430,50 @@ header {
 
 .contact {
   background-color: #040f34; }
-
-.contact-bottom {
-  display: flex;
-  flex-direction: row; }
-  .contact-bottom .contact-first {
-    flex: 1;
-    padding: 20px 100px; }
-  .contact-bottom .add-contact {
+  .contact .contact-bottom {
     display: flex;
-    flex-direction: row;
-    flex: 1;
-    background: red; }
-    .contact-bottom .add-contact .call-me {
-      background: white; }
-    .contact-bottom .add-contact .email-me {
-      background: red; }
-
-form {
-  width: 100%;
-  margin-top: 30px; }
-  form label {
-    font-size: 1.5rem; }
-  form input,
-  form select,
-  form textarea {
-    width: 100%;
-    padding: 2rem 1rem;
-    margin-bottom: 5px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    font-family: Assistant;
-    letter-spacing: 1px;
-    color: grey;
-    border-bottom: 1px solid #9f9d9d;
-    background: inherit; }
-  form input[type="submit"] {
-    width: initial;
-    background-color: white;
-    color: black;
-    padding: 1rem 2rem;
-    border-radius: 0.8rem;
-    cursor: pointer;
-    transition: background-color 650ms; }
-  form input[type="submit"]:hover {
-    color: #221e3f;
-    background-color: #4d4b55; }
-  form ::placeholder {
-    font-size: 16px;
-    font-family: Assistant;
-    letter-spacing: 1px; }
-  form textarea:focus,
-  form input:focus {
-    font-size: 16px;
-    font-family: Assistant;
-    letter-spacing: 1px;
-    color: grey;
-    border-bottom: 2px solid #9f9d9d; }
-  form textarea {
-    width: 300px;
-    height: 200px; }
+    flex-direction: row; }
+  .contact form {
+    width: 70%;
+    margin-top: 30px; }
+    .contact form label {
+      font-size: 1.5rem; }
+    .contact form input,
+    .contact form select,
+    .contact form textarea {
+      width: 100%;
+      padding: 2rem 1rem;
+      margin-bottom: 5px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      font-family: Assistant;
+      letter-spacing: 1px;
+      color: grey;
+      border-bottom: 1px solid #9f9d9d;
+      background: inherit; }
+    .contact form input[type="submit"] {
+      width: initial;
+      background-color: white;
+      color: black;
+      padding: 1rem 2rem;
+      border-radius: 0.8rem;
+      cursor: pointer;
+      transition: background-color 650ms; }
+    .contact form input[type="submit"]:hover {
+      color: #221e3f;
+      background-color: #4d4b55; }
+    .contact form ::placeholder {
+      font-size: 16px;
+      font-family: Assistant;
+      letter-spacing: 1px; }
+    .contact form textarea:focus,
+    .contact form input:focus {
+      font-size: 16px;
+      font-family: Assistant;
+      letter-spacing: 1px;
+      color: grey;
+      border-bottom: 2px solid #9f9d9d; }
 
 .contact-heading {
   text-align: center;
@@ -489,51 +498,3 @@ form {
   .contact-heading h6 {
     font-size: 1.6rem;
     font-weight: 300; }
-
-.kelly {
-  background: blue;
-  display: flex; }
-
-.portfolio-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 5rem;
-  background: blue; }
-  .portfolio-item .portfolio-img {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    .portfolio-item .portfolio-img .ind-img {
-      width: 26%;
-      height: 25%;
-      margin: 0px 20px; }
-    .portfolio-item .portfolio-img img {
-      width: 100%;
-      height: 100%; }
-  .portfolio-item .portfolio-description {
-    flex: 1;
-    background: red; }
-    .portfolio-item .portfolio-description h1 {
-      font-size: 3rem;
-      font-weight: 300;
-      margin: 1rem 0; }
-    .portfolio-item .portfolio-description h6 {
-      font-size: 1.5rem;
-      text-transform: uppercase;
-      font-weight: 300;
-      opacity: 0.3; }
-  .portfolio-item .portfolio-description .cta {
-    display: inline-block;
-    margin: 2.5rem;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: #3883ff;
-    transition: color 650ms; }
-  .portfolio-item .portfolio-description .cta:hover {
-    color: #2f67cd; }
-
-.portfolio-item:last-child {
-  margin-bottom: 0; }

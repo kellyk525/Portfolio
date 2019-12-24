@@ -26,8 +26,6 @@ $(document).ready(function () {
 
 });
 
-window.addEventListener('load', AOS.refresh);
-
 
 
 

@@ -13,6 +13,14 @@
     height: 40%;
     border-radius: 5px; }
 
+.contain .contact-kelly {
+  flex: 1;
+  margin-right: 5rem;
+  background: red;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; }
+
 .contain .about-details {
   flex: 1;
   font-family: Assistant; }

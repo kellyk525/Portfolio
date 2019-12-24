@@ -1,60 +1,138 @@
 // Contact Form
-
+ 
 .contact {
-    background-color: white;
+    background-color: rgb(4, 15, 52);
+}
 
 
-    form {
-        width: 70%;
-        margin: 0 auto;
-        margin-top: 30px;
-    
+.contact-bottom {
+    display: flex;
+    flex-direction: row;
+    // background: purple;
 
-        label {
-            font-size: 1.5rem;
+    .contact-first {
+        flex: 1;
+        padding: 20px 100px;
+    }
+
+    .add-contact {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        background: red;
+
+        .call-me {
+            background: white;
         }
 
-        input,
-        select,
-        textarea {
-            width: 100%;
-            padding: 2rem 1rem;
-            margin-bottom: 5px;
-            border: none;
-            outline-color: #f2e7ee;
-            font-size: 20px;
+        .email-me {
+            background: red;
         }
-
-        input[type="submit"] {
-            width: initial;
-            background-color: #fd57bf;
-            color: #eee;
-            padding: 1rem 2rem;
-            border-radius: 0.8rem;
-            cursor: pointer;
-            transition: background-color 650ms;
-        }
-
-        input[type="submit"]:hover {
-            color: #221e3f;
-            background-color: #ffe838;
-        }
-
-        ::placeholder {
-            font-size: 16px;
-            font-family: Assistant;
-            letter-spacing: 1px;
-
-        }
-
-        input:focus {
-            font-size: 16px;
-            font-family: Assistant;
-            letter-spacing: 1px;
-            color: grey;
-        }
-
-
-
     }
 }
+
+form {
+    width: 100%;
+    // margin: 0 auto;
+    margin-top: 30px;
+
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 2rem 1rem;
+        margin-bottom: 5px;
+        border: none;
+        outline: none;
+        // outline-color: #f2e7ee;
+        font-size: 16px;
+        font-family: Assistant;
+        letter-spacing: 1px;
+        color: grey;
+        border-bottom: 1px solid rgb(159, 157, 157);
+        background: inherit;
+    }
+
+    input[type="submit"] {
+        width: initial;
+        background-color: white;
+        color: black;
+        padding: 1rem 2rem;
+        border-radius: 0.8rem;
+        cursor: pointer;
+        transition: background-color 650ms;
+    }
+
+    input[type="submit"]:hover {
+        color: #221e3f;
+        background-color: #4d4b55;
+    }
+
+    ::placeholder {
+        font-size: 16px;
+        font-family: Assistant;
+        letter-spacing: 1px;
+
+    }
+
+    textarea:focus,
+    input:focus {
+        font-size: 16px;
+        font-family: Assistant;
+        letter-spacing: 1px;
+        color: grey;
+        border-bottom: 2px solid rgb(159, 157, 157);
+    }
+
+    textarea {
+        width: 300px;
+        height: 200px;
+    }
+
+
+}
+
+
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 10rem;
+    font-family: Assistant;
+
+    h1 {
+        font-size: 25px;
+        letter-spacing: 2px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 300;
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    h1::before,
+    h1::after {
+        content: '';
+        position: absolute;
+        bottom: -.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(20, 18, 18, 0.75);
+    }
+
+    h6 {
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+}
+
+
+.kelly {
+    background: blue;
+    display: flex;
+}
+

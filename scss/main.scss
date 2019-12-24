@@ -94,67 +94,6 @@ p {
 }
 
 
-// Portfolio 
-
-.portfolio-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5rem;
-
-    .portfolio-img {
-
-        flex: 1;
-
-        img {
-            
-            width: 100%;
-            height: 100%;
-        }
-    
-    }
-
-    .portfolio-description {
-        flex: 1;
-
-        h1 {
-            font-size: 3rem;
-            font-weight: 300;
-            margin: 1rem 0;
-        }
-
-        h6 {
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            font-weight: 300;
-            opacity: 0.3;
-        }
-    }
-
-    .portfolio-description .cta {
-        display: inline-block;
-        margin: 2.5rem;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        color: #3883ff;
-        transition: color 650ms;
-    }
-
-    .portfolio-description .cta:hover {
-        color: #2f67cd;
-    }
-}
-
-.portfolio-item:last-child {
-    margin-bottom: 0;
-}
-
-// .profile-image {
-//     width: 50rem;
-//     flex: 1;
-// }
-
-
 // Timeline
 
 .timeline ul {
@@ -255,13 +194,13 @@ p {
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(18, 11, 19, 0.99);
+        box-shadow: 0 0 0 0 rgba(242, 233, 244, 0.99)
     }
     70% {
-        box-shadow: 0 0 0 2rem rgba(18, 11, 19, 0);
+        box-shadow: 0 0 0 2rem rgba(242, 233, 244, 0);
     }
     100% {
-        box-shadow: 0 0 0 0 rgba(18, 11, 19, 0);
+        box-shadow: 0 0 0 0 rgba(242, 233, 244, 0);
     }
 }
 
@@ -415,7 +354,6 @@ p {
 
 }
 
-
 // About Section
 @import './about.scss';
 
@@ -430,3 +368,7 @@ p {
 // Contact Section
 
 @import './contact.scss';
+
+// Portfolio Section
+
+@import './portfolio.scss';
