@@ -11,22 +11,51 @@
     // background: purple;
 
     .contact-first {
-        flex: 1;
+        flex: 0.4;
         padding: 20px 100px;
     }
 
     .add-contact {
         display: flex;
         flex-direction: row;
-        flex: 1;
-        background: red;
+        flex: 0.6;
+        // background: red;
+        letter-spacing: 2px;
+
+        h1 {
+            padding: 20px 0px;
+            margin-bottom: 20px;
+            margin-top: -40px;
+            font-size: 22px;
+            font-weight: 500;
+            position: relative;
+            
+        }
+
+        h1:before {
+            content: "";
+            border: 1px solid white;
+            position: absolute;
+            top: 60px;
+            width: 20%;
+            // margin: 10px 0px;
+
+        }
 
         .call-me {
-            background: white;
+            flex: 1;
+            // background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .email-me {
-            background: red;
+            flex: 1;
+            // background: purple;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 }

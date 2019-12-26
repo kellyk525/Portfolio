@@ -5,14 +5,16 @@
 .portfolio-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   margin-bottom: 5rem;
-  background: blue; }
+  background: blue;
+  font-family: Assistant;
+  display: flex; }
   .portfolio-item .portfolio-img {
     flex: 1;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
     .portfolio-item .portfolio-img .ind-img {
       width: 26%;
       height: 25%;
@@ -25,13 +27,21 @@
     background: red; }
     .portfolio-item .portfolio-description h1 {
       font-size: 3rem;
-      font-weight: 300;
-      margin: 1rem 0; }
+      font-weight: 600;
+      margin: 1rem 0;
+      font-size: 21px;
+      letter-spacing: 1.8px; }
     .portfolio-item .portfolio-description h6 {
-      font-size: 1.5rem;
+      font-size: 12px;
       text-transform: uppercase;
       font-weight: 300;
-      opacity: 0.3; }
+      opacity: 0.8;
+      letter-spacing: 1px; }
+    .portfolio-item .portfolio-description p {
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 24px;
+      margin-top: 20px; }
   .portfolio-item .portfolio-description .cta {
     display: inline-block;
     margin: 2.5rem;
