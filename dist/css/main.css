@@ -243,11 +243,14 @@ p {
   .portfolio-item {
     flex-direction: column; }
     .portfolio-item .portfolio-img {
+      flex-direction: column;
       margin: 0 0 2rem 0;
-      order: 1; }
+      order: 2; }
+      .portfolio-item .portfolio-img .ind-img {
+        min-width: 290px; }
     .portfolio-item .portfolio-description {
       margin: 0;
-      order: 2; }
+      order: 1; }
   .timeline p {
     font-size: 1.6rem; }
   .timeline .date::before {
@@ -516,6 +519,10 @@ form {
   background: blue;
   display: flex; }
 
+@media screen and (min-width: 610px) {
+  .portfolio-img {
+    flex-direction: row; } }
+
 .portfolio-item {
   display: flex;
   flex-direction: column;
@@ -526,7 +533,6 @@ form {
   .portfolio-item .portfolio-img {
     flex: 1;
     display: flex;
-    flex-direction: row;
     justify-content: center; }
     .portfolio-item .portfolio-img .ind-img {
       width: 26%;

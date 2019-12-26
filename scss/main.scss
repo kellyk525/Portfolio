@@ -382,13 +382,18 @@ p {
         flex-direction: column;
 
         .portfolio-img {
+            flex-direction: column;
             margin: 0 0 2rem 0;
-            order: 1;
+            order: 2;
+
+            .ind-img {
+                min-width: 290px;
+            }
         }
 
         .portfolio-description {
             margin: 0;
-            order: 2;
+            order: 1;
         }
     }
 

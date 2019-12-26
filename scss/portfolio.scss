@@ -2,6 +2,15 @@
 
 // Portfolio 
 
+@media screen and (min-width: 610px) {
+    
+    .portfolio-img {
+        flex-direction: row;
+    }
+    
+}
+
+
 .portfolio-item {
     display: flex;
     flex-direction: column;
@@ -13,7 +22,6 @@
     .portfolio-img {
         flex: 1;
         display: flex;
-        flex-direction: row;
         justify-content: center;
 
         .ind-img {
