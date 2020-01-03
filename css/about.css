@@ -1,0 +1,86 @@
+.about .contain {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.contain .profile-image {
+  flex: 0.3;
+  margin-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .contain .profile-image img {
+    min-width: 227px;
+    max-width: 230px;
+    width: 70%;
+    height: 98%;
+    border-radius: 5px;
+    max-height: 318px;
+    min-height: 310px;
+    margin: 0 auto; }
+  .contain .profile-image h6 {
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    font-family: Assistant;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: black; }
+  .contain .profile-image .social-media {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.475);
+    width: 70%;
+    margin: 0 auto; }
+    .contain .profile-image .social-media i {
+      color: white; }
+
+.contain .contact-kelly {
+  flex: 1;
+  margin-right: 5rem;
+  background: red;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; }
+
+.contain .about-details {
+  flex: 0.7;
+  font-family: Assistant;
+  padding: 10px; }
+  .contain .about-details .cornell {
+    line-height: 34px;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+    color: black; }
+  .contain .about-details .about-heading {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; }
+    .contain .about-details .about-heading h1 {
+      font-size: 118px;
+      opacity: 0.7;
+      font-family: Playfair Display;
+      font-weight: 900;
+      letter-spacing: 10px;
+      color: black;
+      text-shadow: -4px 0 8px rgba(75, 16, 16, 0.7), 0 2px 0px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7);
+      text-shadow: -4px 0 8px rgba(109, 18, 18, 0.7), 0 2px 0px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7); }
+    .contain .about-details .about-heading h6 {
+      font-size: 2rem;
+      font-weight: 300;
+      color: black;
+      height: 50px;
+      padding-left: 10px; }
+  .contain .about-details .social-media i {
+    font-size: 19px;
+    transition: color 650ms; }
+  .contain .about-details .fa-github:hover {
+    color: #4267b2; }
+  .contain .about-details .fa-linkedin-in:hover {
+    color: #38a1f3; }
+  .contain .about-details .fa-angellist:hover {
+    color: #4267b2; }
+  .contain .about-details .fa-instagram:hover {
+    color: #4267b2; }

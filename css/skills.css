@@ -1,0 +1,38 @@
+.my-skills {
+  margin-top: 10rem;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center; }
+  .my-skills .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem; }
+    .my-skills .skill h1 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 300;
+      font-family: Assistant;
+      font-size: 13px;
+      margin: 2rem -2px 2rem 0; }
+    .my-skills .skill .icon-container {
+      width: 16rem;
+      height: 16rem;
+      background: rgba(255, 255, 255, 0.331);
+      background: transparent;
+      border: 1px solid white;
+      box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.434);
+      margin-bottom: 0.6rem;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 2px; }
+      .my-skills .skill .icon-container i {
+        color: white;
+        font-size: 5rem;
+        margin: auto; }

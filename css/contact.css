@@ -1,0 +1,111 @@
+.contact {
+  background-color: #040f34;
+  background-color: transparent; }
+
+.contact-bottom {
+  display: flex;
+  flex-direction: row; }
+  .contact-bottom .contact-first {
+    flex: 0.4;
+    padding: 20px 100px; }
+  .contact-bottom .add-contact {
+    display: flex;
+    flex-direction: row;
+    flex: 0.6;
+    letter-spacing: 2px; }
+    .contact-bottom .add-contact h1 {
+      padding: 20px 0px;
+      margin-bottom: 20px;
+      margin-top: -40px;
+      font-size: 22px;
+      font-weight: 500;
+      position: relative; }
+    .contact-bottom .add-contact h1:before {
+      content: "";
+      border: 1px solid white;
+      position: absolute;
+      top: 60px;
+      width: 20%; }
+    .contact-bottom .add-contact .call-me {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .contact-bottom .add-contact .email-me {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+
+form {
+  width: 100%;
+  margin-top: 30px; }
+  form label {
+    font-size: 1.5rem; }
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 2rem 1rem;
+    margin-bottom: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: Assistant;
+    letter-spacing: 1px;
+    color: grey;
+    border-bottom: 1px solid #9f9d9d;
+    background: inherit; }
+  form input[type="submit"] {
+    width: initial;
+    background-color: white;
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 650ms; }
+  form input[type="submit"]:hover {
+    color: #221e3f;
+    background-color: #4d4b55; }
+  form ::placeholder {
+    font-size: 16px;
+    font-family: Assistant;
+    letter-spacing: 1px; }
+  form textarea:focus,
+  form input:focus {
+    font-size: 16px;
+    font-family: Assistant;
+    letter-spacing: 1px;
+    color: grey;
+    border-bottom: 2px solid #9f9d9d; }
+  form textarea {
+    width: 300px;
+    height: 200px; }
+
+.contact-heading {
+  text-align: center;
+  margin-bottom: 10rem;
+  font-family: Assistant; }
+  .contact-heading h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1rem; }
+  .contact-heading h1::before,
+  .contact-heading h1::after {
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(20, 18, 18, 0.75); }
+  .contact-heading h6 {
+    font-size: 1.6rem;
+    font-weight: 300; }
+
+.kelly {
+  background: blue;
+  display: flex; }
