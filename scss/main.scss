@@ -50,6 +50,15 @@ p {
     position: relative;
 }
 
+.contain-port {
+    width: 100%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
 .section-heading {
     text-align: left;
     margin-bottom: 10rem;
