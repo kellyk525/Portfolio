@@ -445,18 +445,19 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: red;
+    // background: red;
     position: relative;
 
     .menu-toggle {
-        font-size: 2.2rem;
-        color: #fff;
+        font-size: 2rem;
+        color: rgb(89, 89, 89);
         position: absolute;
         top: 50%;
         right: 2.5rem;
         transform: translateY(-50%);
         cursor: pointer;
         z-index: 1500;
+        font-weight: 300;
     }
 
     .fa-times {
@@ -470,14 +471,35 @@ p {
         left: 0;
         width: 100%;
         height: 100vh;
-        background: beige;
+        // background: beige;
+        background: white;
+        opacity: 0.97;
         padding: 4.4rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        // justify-content: space-around;
         z-index: 1000;
         transform: translateY(+100%);
         transition: transform 0.5s;
+
+        li {
+            // background: red;
+            font-size: 25px;
+            letter-spacing: 5px;
+            font-family: Overpass;
+            padding: 20px 0px;
+            text-align: center;
+            font-weight: 900;
+            text-shadow: -1px 0 rgba(181, 178, 178, 0.7), 0 1px rgba(181, 178, 178, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7);
+            // text-shadow: -0.7px 0 rgba(255, 255, 255, 0.543), 0 0.7px rgba(255, 255, 255, 0.687), 0.7px 0 rgba(255, 255, 255, 0.605), 0 -0.7px rgba(255, 255, 255, 0.557);
+
+
+            a {
+                color: white;
+
+            }
+        }
     }
 }
 
