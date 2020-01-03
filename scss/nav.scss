@@ -45,18 +45,27 @@ header {
         // background: rgba(255, 255, 255, 0.256);
         // -webkit-background-clip: text;
         // -webkit-text-fill-color: transparent;
+
         color: rgba(255, 255, 255, 0.906);
+
         // color: black;
+
         text-shadow: -4px 0 rgba(75, 16, 16, 0.7), 0 2px 8px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7);
+        
         // text-shadow: -4px 0 8px rgba(75, 16, 16, 0.7), 0 2px 0px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7);
 
-        opacity: 0.7;
+        // opacity: 0.7;
         opacity: 0.25;
         padding: 1rem;
         user-select: none;
         font-weight: 900;
         letter-spacing: 6px;
         margin-bottom: 25px;
+
+        // background: $clip no-repeat fixed;;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        // background-size: cover;
     }
 
     h1:hover {
