@@ -21,10 +21,14 @@
       font-size: 13px;
       margin: 2rem -2px 2rem 0; }
     .my-skills .skill .icon-container {
-      width: 17rem;
-      height: 17rem;
-      background: black;
+      width: 16rem;
+      height: 16rem;
+      background: rgba(255, 255, 255, 0.331);
+      background: transparent;
+      border: 1px solid white;
+      box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.434);
       margin-bottom: 0.6rem;
+      margin: 10px;
       display: flex;
       flex-direction: column;
       border-radius: 2px; }

@@ -1,5 +1,5 @@
 $primary-color: black;
-$background: url("../images/background.jpeg");
+$background: url("../images/colorful.jpg");
 
 * {
     margin: 0;
@@ -19,6 +19,11 @@ body {
     height: 100%;
     background: $background no-repeat center fixed;
     background-size: cover;
+    // background: rgb(238,174,202);
+    // background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    // background: rgb(106,5,49);
+    // background: radial-gradient(circle, rgba(106,5,49,1) 0%, rgba(6,38,75,1) 100%);
+
 }
 
 section {
@@ -46,18 +51,25 @@ p {
 }
 
 .section-heading {
-    text-align: center;
+    text-align: left;
     margin-bottom: 10rem;
-    font-family: Assistant;
+    font-family: Playfair Display;
+
+    // background: blue;
+    
 
     h1 {
-        font-size: 3rem;
-        letter-spacing: 1px;
-        color: rgba(18, 17, 17, 0.76);
+        font-size: 70px;
+        letter-spacing: 5px;
+        color: white;
+        opacity: 0.6;
         text-transform: uppercase;
-        font-weight: 300;
+        font-weight: 600;
         position: relative;
         margin-bottom: 1rem;
+        text-shadow: -2px 0 0px rgba(109, 18, 18, 0.7), 0 1px 0px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7);
+        // text-shadow: -4px 0 3px rgba(75, 16, 16, 0.7), 0 2px 0px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7);
+
     }
 
     h1::before,
@@ -485,7 +497,7 @@ p {
 
         li {
             // background: red;
-            font-size: 25px;
+            font-size: 22px;
             letter-spacing: 5px;
             font-family: Overpass;
             padding: 20px 0px;

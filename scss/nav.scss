@@ -31,7 +31,7 @@ header {
 
 .entry-text {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -42,21 +42,40 @@ header {
         font-size: 15rem;
         // font-family: 'Amatic SC';
         font-family: 'Playfair Display';
-        background: white;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        // background: rgba(255, 255, 255, 0.256);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        color: rgba(255, 255, 255, 0.906);
+        // color: black;
+        text-shadow: -4px 0 rgba(75, 16, 16, 0.7), 0 2px 8px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7);
+        // text-shadow: -4px 0 8px rgba(75, 16, 16, 0.7), 0 2px 0px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7);
+
+        opacity: 0.7;
+        opacity: 0.25;
         padding: 1rem;
         user-select: none;
-        font-weight: 400;
+        font-weight: 900;
+        letter-spacing: 6px;
+        margin-bottom: 25px;
+    }
+
+    h1:hover {
+        cursor:pointer;
+        opacity: 0.4;
     }
 
     h6 {
-        font-size: 2rem;
+        font-size: 15px;
         font-weight: 300;
+        font-family: Assistant;
+        padding-left: 20px;
+        color: rgb(6, 10, 46);
+        letter-spacing: 2px;
+        margin-bottom: 20px;
     }
 
     .nav-list-social {
-        font-size: 19px;
+        font-size: 15px;
 
         .fab:hover {
             color: #4267b2;
@@ -75,10 +94,11 @@ header {
     flex-direction: row; 
     justify-content: center;
     align-items: center;
+    padding-left: 5px;
     
     li {
-        margin: 1rem 2rem;
-        color: black;
+        margin: 10px 16px;
+        color: rgba(106, 4, 4, 0.557);
     }
 
 
@@ -86,6 +106,19 @@ header {
 
 
 @media screen and (min-width: 900px) {
+
+    .entry-text {
+        // background: black;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 60px;
+
+        h1 {
+            font-size: 170px;
+            
+        }
+    }
 
 
     .nav {
@@ -95,9 +128,9 @@ header {
 
     .nav-large {
         display: block;
-        background: grey;
+        background: transparent;
         opacity: 0.9;
-        position: fixed;
+        position: absolute;
         top: 0;
         width: 100%;
         height: 80px;
@@ -119,6 +152,10 @@ header {
             font-weight: 400;
             font-family: Assistant;
             text-transform: uppercase;
+
+            a {
+                color: white;
+            }
         }
     }
 

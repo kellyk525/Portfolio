@@ -11,7 +11,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: url("../images/background.jpeg") no-repeat center fixed;
+  background: url("../images/colorful.jpg") no-repeat center fixed;
   background-size: cover; }
 
 section {
@@ -33,17 +33,19 @@ p {
   position: relative; }
 
 .section-heading {
-  text-align: center;
+  text-align: left;
   margin-bottom: 10rem;
-  font-family: Assistant; }
+  font-family: Playfair Display; }
   .section-heading h1 {
-    font-size: 3rem;
-    letter-spacing: 1px;
-    color: rgba(18, 17, 17, 0.76);
+    font-size: 70px;
+    letter-spacing: 5px;
+    color: white;
+    opacity: 0.6;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 600;
     position: relative;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    text-shadow: -2px 0 0px rgba(109, 18, 18, 0.7), 0 1px 0px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7); }
   .section-heading h1::before,
   .section-heading h1::after {
     content: '';
@@ -149,7 +151,7 @@ p {
   body {
     width: 100%;
     height: 100%;
-    background: url("../images/background.jpeg") no-repeat center fixed;
+    background: url("../images/colorful.jpg") no-repeat center fixed;
     background-size: cover; }
   .entry-text h1 {
     font-size: 15rem; }
@@ -268,14 +270,36 @@ p {
   justify-content: center; }
 
 .contain .profile-image {
-  flex: 1;
+  flex: 0.3;
   margin-right: 5rem;
   display: flex;
+  flex-direction: column;
   justify-content: center; }
   .contain .profile-image img {
-    width: 40%;
-    height: 40%;
-    border-radius: 5px; }
+    min-width: 227px;
+    max-width: 230px;
+    width: 70%;
+    height: 98%;
+    border-radius: 5px;
+    max-height: 318px;
+    min-height: 310px;
+    margin: 0 auto; }
+  .contain .profile-image h6 {
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    font-family: Assistant;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: black; }
+  .contain .profile-image .social-media {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.475);
+    width: 70%;
+    margin: 0 auto; }
+    .contain .profile-image .social-media i {
+      color: white; }
 
 .contain .contact-kelly {
   flex: 1;
@@ -286,21 +310,35 @@ p {
   flex-direction: row; }
 
 .contain .about-details {
-  flex: 1;
-  font-family: Assistant; }
+  flex: 0.7;
+  font-family: Assistant;
+  padding: 10px; }
+  .contain .about-details .cornell {
+    line-height: 34px;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+    color: black; }
   .contain .about-details .about-heading {
-    text-align: center;
     text-transform: uppercase;
-    line-height: 0;
-    margin-bottom: 6rem; }
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; }
     .contain .about-details .about-heading h1 {
-      font-size: 10rem;
-      opacity: 0.3;
-      font-family: Playfair Display; }
+      font-size: 118px;
+      opacity: 0.7;
+      font-family: Playfair Display;
+      font-weight: 900;
+      letter-spacing: 10px;
+      color: black;
+      text-shadow: -4px 0 8px rgba(75, 16, 16, 0.7), 0 2px 0px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7);
+      text-shadow: -4px 0 8px rgba(109, 18, 18, 0.7), 0 2px 0px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7); }
     .contain .about-details .about-heading h6 {
       font-size: 2rem;
       font-weight: 300;
-      color: black; }
+      color: black;
+      height: 50px;
+      padding-left: 10px; }
   .contain .about-details .social-media i {
     font-size: 19px;
     transition: color 650ms; }
@@ -334,7 +372,7 @@ header {
 
 .entry-text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -343,17 +381,28 @@ header {
   .entry-text h1 {
     font-size: 15rem;
     font-family: 'Playfair Display';
-    background: white;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgba(255, 255, 255, 0.906);
+    text-shadow: -4px 0 rgba(75, 16, 16, 0.7), 0 2px 8px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7);
+    opacity: 0.7;
+    opacity: 0.25;
     padding: 1rem;
     user-select: none;
-    font-weight: 400; }
+    font-weight: 900;
+    letter-spacing: 6px;
+    margin-bottom: 25px; }
+  .entry-text h1:hover {
+    cursor: pointer;
+    opacity: 0.4; }
   .entry-text h6 {
-    font-size: 2rem;
-    font-weight: 300; }
+    font-size: 15px;
+    font-weight: 300;
+    font-family: Assistant;
+    padding-left: 20px;
+    color: #060a2e;
+    letter-spacing: 2px;
+    margin-bottom: 20px; }
   .entry-text .nav-list-social {
-    font-size: 19px; }
+    font-size: 15px; }
     .entry-text .nav-list-social .fab:hover {
       color: #4267b2; }
 
@@ -364,20 +413,28 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-left: 5px; }
   .nav-list-social li {
-    margin: 1rem 2rem;
-    color: black; }
+    margin: 10px 16px;
+    color: rgba(106, 4, 4, 0.557); }
 
 @media screen and (min-width: 900px) {
+  .entry-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 60px; }
+    .entry-text h1 {
+      font-size: 170px; }
   .nav {
     display: none;
     top: -100px; }
   .nav-large {
     display: block;
-    background: grey;
+    background: transparent;
     opacity: 0.9;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     height: 80px;
@@ -396,6 +453,8 @@ header {
       font-weight: 400;
       font-family: Assistant;
       text-transform: uppercase; }
+      .nav-large ul a {
+        color: white; }
   .top-nav {
     width: initial;
     height: 10vh;
@@ -450,10 +509,14 @@ header {
       font-size: 13px;
       margin: 2rem -2px 2rem 0; }
     .my-skills .skill .icon-container {
-      width: 17rem;
-      height: 17rem;
-      background: black;
+      width: 16rem;
+      height: 16rem;
+      background: rgba(255, 255, 255, 0.331);
+      background: transparent;
+      border: 1px solid white;
+      box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.434);
       margin-bottom: 0.6rem;
+      margin: 10px;
       display: flex;
       flex-direction: column;
       border-radius: 2px; }
@@ -665,7 +728,7 @@ form {
     transform: translateY(100%);
     transition: transform 0.5s; }
     .nav .nav-lists li {
-      font-size: 25px;
+      font-size: 22px;
       letter-spacing: 5px;
       font-family: Overpass;
       padding: 20px 0px;
