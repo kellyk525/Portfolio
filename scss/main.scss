@@ -211,6 +211,10 @@ p {
 // min-width -- on screens that are more than 600px wide
 @media screen and (max-width: 900px) {
 
+    .nav-large {
+        display: none;
+    }
+
     body {
         width: 100%;
         height: 100%;
@@ -415,6 +419,7 @@ p {
 
 }
 
+
 // About Section
 @import './about.scss';
 
@@ -433,3 +438,57 @@ p {
 // Portfolio Section
 
 @import './portfolio.scss';
+
+
+.nav {
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    position: relative;
+
+    .menu-toggle {
+        font-size: 2.2rem;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        right: 2.5rem;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 1500;
+    }
+
+    .fa-times {
+        display: none;
+    }
+
+    .nav-lists {
+        list-style: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: beige;
+        padding: 4.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 1000;
+        transform: translateY(+100%);
+        transition: transform 0.5s;
+    }
+}
+
+.opens .fa-times {
+    display: block;
+}
+
+.opens .fa-bars {
+    display: none;
+}
+
+.opens .nav-lists {
+    transform: translateY(0);
+}

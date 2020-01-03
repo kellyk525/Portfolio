@@ -5,6 +5,14 @@ $(document).ready(function () {
         $(".top-nav").toggleClass("open");
     })
 
+    $(".menu-toggle").on("click", function () {
+        $('body').toggleClass("opens");
+    })
+
+    $(".nav .nav-link").on("click", function () {
+        $('body').removeClass("opens");
+    })
+
     $(".top-nav .navigation-link").on("click", function () {
         $('.menu-nav').removeClass("open");
         $('.top-nav').removeClass("open");

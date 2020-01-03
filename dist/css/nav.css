@@ -5,7 +5,14 @@ header {
 .top-nav.open {
   top: 0;
   border-radius: initial;
-  z-index: 100; }
+  z-index: 100;
+  animation: second 1s ease-in; }
+
+@keyframes second {
+  0% {
+    transform: translate(-100px); }
+  100% {
+    transform: translateX(0px); } }
 
 .menu-nav.open {
   transform: rotate(-180deg); }
@@ -48,6 +55,32 @@ header {
     color: black; }
 
 @media screen and (min-width: 900px) {
+  .nav {
+    display: none;
+    top: -100px; }
+  .nav-large {
+    display: block;
+    background: grey;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end; }
+    .nav-large ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      font-size: 11px;
+      width: 50%;
+      letter-spacing: 2.5px;
+      color: white;
+      font-weight: 400;
+      font-family: Assistant;
+      text-transform: uppercase; }
   .top-nav {
     width: initial;
     height: 10vh;
