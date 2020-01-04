@@ -4,42 +4,55 @@
 
 .contact-bottom {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  width: 84%;
+  margin: 0 auto;
+  margin-bottom: 50px; }
   .contact-bottom .contact-first {
-    flex: 0.4;
-    padding: 20px 100px; }
+    flex: 0.6;
+    padding: 20px 100px;
+    border: 1px solid white; }
   .contact-bottom .add-contact {
     display: flex;
-    flex-direction: row;
-    flex: 0.6;
+    flex-direction: column;
+    flex: 0.4;
+    justify-content: center;
     letter-spacing: 2px; }
     .contact-bottom .add-contact h1 {
-      padding: 20px 0px;
-      margin-bottom: 20px;
+      padding: 20px 0px 10px 0px;
+      margin-bottom: 10px;
       margin-top: -40px;
-      font-size: 22px;
-      font-weight: 500;
-      position: relative; }
-    .contact-bottom .add-contact h1:before {
-      content: "";
-      border: 1px solid white;
-      position: absolute;
-      top: 60px;
-      width: 20%; }
+      font-size: 60px;
+      font-weight: 700;
+      position: relative;
+      font-family: Assistant;
+      opacity: 0.5; }
     .contact-bottom .add-contact .call-me {
       flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: center; }
+      .contact-bottom .add-contact .call-me div {
+        font-size: 15px;
+        font-family: Assistant;
+        letter-spacing: 3px; }
     .contact-bottom .add-contact .email-me {
       flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: center; }
+      .contact-bottom .add-contact .email-me div {
+        font-size: 15px;
+        font-family: Assistant;
+        letter-spacing: 3px; }
+    .contact-bottom .add-contact .social-media ul {
+      width: 50%; }
 
 form {
   width: 100%;
-  margin-top: 30px; }
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column; }
   form label {
     font-size: 1.5rem; }
   form input,
@@ -53,47 +66,52 @@ form {
     font-size: 16px;
     font-family: Assistant;
     letter-spacing: 1px;
-    color: grey;
+    color: rgba(255, 255, 255, 0.61);
     border-bottom: 1px solid #9f9d9d;
+    border-bottom: 1px solid rgba(114, 90, 21, 0.29);
     background: inherit; }
   form input[type="submit"] {
     width: initial;
     background-color: white;
     color: black;
+    opacity: 0.4;
     padding: 1rem 2rem;
-    border-radius: 0.8rem;
+    border-radius: 3px;
     cursor: pointer;
-    transition: background-color 650ms; }
+    transition: background-color 650ms;
+    margin-top: 17px; }
   form input[type="submit"]:hover {
-    color: #221e3f;
+    color: white;
     background-color: #4d4b55; }
   form ::placeholder {
     font-size: 16px;
     font-family: Assistant;
-    letter-spacing: 1px; }
+    letter-spacing: 1.2px;
+    color: rgba(255, 255, 255, 0.61); }
   form textarea:focus,
   form input:focus {
     font-size: 16px;
     font-family: Assistant;
     letter-spacing: 1px;
-    color: grey;
-    border-bottom: 2px solid #9f9d9d; }
+    color: rgba(255, 255, 255, 0.9); }
   form textarea {
-    width: 300px;
-    height: 200px; }
+    min-height: 140px;
+    max-height: 144px; }
 
 .contact-heading {
-  text-align: center;
+  text-align: left;
   margin-bottom: 10rem;
-  font-family: Assistant; }
+  font-family: Playfair Display; }
   .contact-heading h1 {
-    font-size: 25px;
-    letter-spacing: 2px;
+    font-size: 80px;
+    letter-spacing: 5px;
     color: white;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 900;
     position: relative;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    text-shadow: -6px 0 rgba(147, 5, 5, 0.7), 0 2px 8px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7);
+    text-shadow: -6px 0 rgba(244, 236, 236, 0.7), 0 2px 8px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7); }
   .contact-heading h1::before,
   .contact-heading h1::after {
     content: '';
