@@ -16,6 +16,17 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Asap|Assistant:300,400,600,700|IBM+Plex+Sans:300,400|Overpass:200,300,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:700|Rozha+One|Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155312333-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-155312333-1');
+    </script>
+    
     <title>
         Kelly Ku
     </title>
@@ -64,9 +75,6 @@
                     <a href="#portfolio" class="nav-link">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
@@ -104,12 +112,12 @@
             <div class="social-media">
                 <ul class="nav-list-social">
                     <li>
-                        <a href="#" class="social-link" >
+                        <a href="https://github.com/kellyk525" class="social-link" target="_blank" >
                             <i class="fab fa-github"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-link">
+                        <a href="https://www.linkedin.com/in/kelly-ku-642b49130/" class="social-link" target="_blank" >
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
@@ -153,12 +161,12 @@
                 <div class="social-media">
                     <ul class="nav-list-social">
                         <li>
-                            <a href="#" class="social-link">
+                            <a href="https://github.com/kellyk525" class="social-link">
                                 <i class="fab fa-github"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="social-link">
+                            <a href="https://www.linkedin.com/in/kelly-ku-642b49130/" class="social-link" target="_blank" >
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>
@@ -276,8 +284,8 @@
                         MERN stack team-built meal planning web application where users are able to design, customize, and plan their weekly
                         meals based on the ingredients they already have.
                     </p>
-                    <a href="#" class="cta">Live Site</a>
-                    <a href="#" class="cta">Github</a>
+                    <a href="http://delicieux.herokuapp.com/#/" class="cta" target="_blank" >Live Site</a>
+                    <a href="https://github.com/jashieh/delicieux" class="cta" target="_blank" >Github</a>
                 </div>
                 <div class="portfolio-img" data-aos="fade-left" data-aos-delay="600">
                     <div class="ind-img">
@@ -298,8 +306,8 @@
                     <p>
                         Clone of Aesop.com, an E-commerce website that allows users to browse through and shop Aesop products
                     </p>
-                    <a href="#" class="cta">Live Site</a>
-                    <a href="#" class="cta">Github</a>
+                    <a href="http://aesop-kelly.herokuapp.com/#/" class="cta" target="_blank" >Live Site</a>
+                    <a href="https://github.com/kellyk525/Aesop" class="cta" target="_blank" >Github</a>
                 </div>
                 <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
                     <div class="ind-img">
@@ -321,8 +329,8 @@
                         MERN stack team-built meal planning web application where users are able to design, customize, and plan their weekly
                         meals based on the ingredients they already have.
                     </p>
-                    <a href="#" class="cta">Live Site</a>
-                    <a href="#" class="cta">Github</a>
+                    <a href="#" class="cta" target="_blank" >Live Site</a>
+                    <a href="#" class="cta" target="_blank" >Github</a>
                 </div>
                 <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1500">
                     <div class="ind-img">
@@ -374,30 +382,22 @@
     <section class="contact" id="contact">
         <div class="contain">
             <div class="contact-heading">
-                <h1>Contact Me
-                    <img src="./images/snowflakes-2.png" width="25px" alt="">
+                <h1>
+                    Contact
                 </h1>
             </div>
         </div>
         <div class="contact-bottom" data-aos="fade-up" data-aos-delay="300">
-            <div class="contact-first">
-                <form action="">
-                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
-                    <input type="text" id="email" name="email" placeholder="Enter Your Email" required>
-                    <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
             <div class="add-contact">
-                <div class="call-me">
-                    <h1>CALL ME</h1>
-                    <div>+1 (646) 640-6079</div>
-                </div>
                 <div class="email-me">
                     <h1>EMAIL ME</h1>
                     <div>kjk224@cornell.edu</div>
                 </div>
-                <div class="social-media">
+                <div class="call-me">
+                    <h1>REACH OUT</h1>
+                    <div>+1 (646) 640-6079</div>
+                </div>
+                <!-- <div class="social-media">
                     <ul class="nav-list-social">
                         <li>
                             <a href="#" class="social-link">
@@ -420,16 +420,23 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
+            </div>
+            <div class="contact-first">
+                <form action="https://formspree.io/xayqkbll" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                    <input type="text" id="email" name="_replyto" placeholder="Enter Your Email" required>
+                    <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
             </div>
         </div>
-        
     </section> 
     <footer class="copyright">
         <div class="up" id="up">
             <i class="fas fa-chevron-up"></i>
         </div>
-        <p>&copy; 2019 Kelly Ku</p>
+        <p>&copy; 2020 Kelly Ku, San Francisco</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
