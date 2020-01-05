@@ -471,7 +471,7 @@ p {
         width: 100%;
         height: 100vh;
         // background: beige;
-        background: white;
+        background: rgba(240, 240, 240, 0.92);
         opacity: 0.97;
         padding: 4.4rem;
         display: flex;
@@ -484,9 +484,9 @@ p {
 
         li {
             // background: red;
-            font-size: 22px;
-            letter-spacing: 5px;
-            font-family: Overpass;
+            font-size: 20px;
+            letter-spacing: 9px;
+            font-family: Poiret One;
             padding: 20px 0px;
             text-align: center;
             font-weight: 900;
@@ -495,7 +495,9 @@ p {
 
 
             a {
-                color: white;
+                color: rgb(193, 43, 43);
+                // color: rgb(244, 105, 105);
+                color: black;
 
             }
         }

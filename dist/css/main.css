@@ -393,7 +393,7 @@ header {
 
 @keyframes second {
   0% {
-    transform: translate(-100px); }
+    transform: translate(-200px); }
   100% {
     transform: translateX(0px); } }
 
@@ -799,7 +799,7 @@ form {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: white;
+    background: rgba(240, 240, 240, 0.92);
     opacity: 0.97;
     padding: 4.4rem;
     display: flex;
@@ -809,15 +809,16 @@ form {
     transform: translateY(100%);
     transition: transform 0.5s; }
     .nav .nav-lists li {
-      font-size: 22px;
-      letter-spacing: 5px;
-      font-family: Overpass;
+      font-size: 20px;
+      letter-spacing: 9px;
+      font-family: Poiret One;
       padding: 20px 0px;
       text-align: center;
       font-weight: 900;
       text-shadow: -1px 0 rgba(181, 178, 178, 0.7), 0 1px rgba(181, 178, 178, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7); }
       .nav .nav-lists li a {
-        color: white; }
+        color: #c12b2b;
+        color: black; }
 
 .opens .fa-times {
   display: block; }
