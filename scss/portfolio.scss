@@ -2,39 +2,55 @@
 
 // Portfolio 
 
-@media screen and (min-width: 610px) {
+@media screen and (max-width: 800px) {
     
     .portfolio-img {
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+
+        .ind-img {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            min-width: 300px;
+        }
+        
     }
 
 }
 
+@media screen and (min-width: 800px) {
+
+    .portfolio-img {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 
 
 .portfolio-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 5rem;
-    // background: rgba(242, 240, 240, 0.392);
     font-family: Assistant;
-    display: flex;
+    padding: 20px;
+    background: rgba(96, 96, 96, 0.283);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(153, 152, 152, 0.413);
+    width: 93%;
+    margin: 0 auto;
+    margin-bottom: 64px;
+
 
     .portfolio-img {
         flex: 1;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        // justify-content: center;
-        // align-content: flex-start;
-        // background: black;
 
         .ind-img {
-            // width: 31%;
-            width: 372px;
+            width: 31.5%;
+            // min-width: 240px;
+            // width: 340px;
             // height: 25%;
-            height: 256px;
+            height: 240px;
             min-height: 225px;
             // margin: 0px 13px;
         }
@@ -52,14 +68,17 @@
     .portfolio-description {
         flex: 1;
         color: black;
+        padding-left: 13px;
 
 
         h1 {
-            font-weight: 600;
+            font-weight: 300;
             margin: 1rem 0;
-            font-size: 35px;
+            margin-bottom: 5px;
+            font-size: 30px;
             letter-spacing: 3px;
-            font-family: Playfair Display;
+            font-family: Overpass;
+            color: white;
         }
 
         h6 {
@@ -68,26 +87,29 @@
             font-weight: 300;
             opacity: 0.8;
             letter-spacing: 1px;
-            // padding-left: 20px;
             padding-top: 5px;
+            color: white;
         }
 
         p {
-            font-size: 15px;
-            letter-spacing: 1px;
+            font-size: 13px;
+            letter-spacing: 2px;
             line-height: 30px;
             margin-top: 10px;
-            // padding-left: 20px;
+            font-family: Overpass;
+            font-weight: 100;
+            color: white;
         }
     }
 
     .portfolio-description .cta {
         display: inline-block;
         margin: 2.5rem;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-transform: uppercase;
         color: #222222;
         transition: color 650ms;
+        letter-spacing: 2px;
     }
 
     .portfolio-description .cta:hover {
@@ -98,8 +120,3 @@
 .portfolio-item:last-child {
     margin-bottom: 0;
 }
-
-// .profile-image {
-//     width: 50rem;
-//     flex: 1;
-// }

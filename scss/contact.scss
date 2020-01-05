@@ -1,4 +1,29 @@
 // Contact Form
+
+@media screen and (max-width: 850px) {
+    
+    .contact-bottom {
+        flex-direction: column;
+    }
+
+    .email-me div {
+        margin-bottom: 30px;
+    }
+
+    .call-me div {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+
+    .contact-bottom {
+        flex-direction: row;
+    }
+    
+}
+
  
 .contact {
     background-color: rgb(4, 15, 52);
@@ -8,7 +33,6 @@
 
 .contact-bottom {
     display: flex;
-    flex-direction: row;
     // background: purple;
     width: 84%;
     margin: 0 auto;
@@ -183,7 +207,6 @@ form {
     
 
     h1 {
-        font-size: 80px;
         letter-spacing: 5px;
         color: white;
         text-transform: uppercase;

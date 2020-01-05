@@ -1,6 +1,87 @@
 
 // About Section
 
+
+@media screen and (max-width: 850px) {
+    
+    .about .contain {
+        flex-direction: column;
+
+        .profile-image {
+            margin: 0 0 7rem 0;
+        }
+    }
+
+    .cornell {
+        margin-bottom: 25px;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+
+    .portfolio-item {
+        flex-direction: column;
+
+        .portfolio-img {
+            flex-direction: column;
+            margin: 0 0 2rem 0;
+            order: 2;
+
+            .ind-img {
+                min-width: 290px;
+            }
+        }
+
+        .portfolio-description {
+            margin: 0;
+            order: 1;
+        }
+    }
+
+    .entry-text {
+        top: 51%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .entry-text h1 {
+        font-size: 13rem;
+    
+    }
+
+    .about-heading h1 {
+        font-size: 83px;
+        padding-left: 25px;
+    }
+
+    .contact-heading h1 {
+        font-size: 50px;
+        letter-spacing: 14px;
+    }
+
+
+}
+
+@media screen and (min-width: 800px) {
+
+    .about .contain {
+        flex-direction: row;
+    }
+
+    .entry-text {
+        top: 40%;
+    }
+
+    .about-heading h1 {
+        font-size: 118px;
+    }
+
+    .contact-heading h1 {
+        font-size: 80px;
+    }
+
+}
+
+
 .about .contain {
     display: flex;
     align-items: center;
@@ -10,16 +91,12 @@
 
 .contain {
 
-    // background: blue;
-
     .profile-image {
         flex: 0.3;
         margin-right: 5rem;
-        // background: red;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // height: 310px;
         
         img {
             min-width: 227px;
@@ -33,7 +110,6 @@
         }
 
         h6 {
-            // background: blue;
             padding: 20px;
             font-size: 16px;
             text-align: center;
@@ -73,7 +149,6 @@
     .about-details {
         flex: 0.7;
         font-family: Assistant;
-        // background: purple;
         padding: 10px;
 
 
@@ -85,8 +160,6 @@
         }
 
         .about-heading {
-            // text-align: center;
-            // line-height: 0;
             text-transform: uppercase;
             margin-bottom: 2rem;
             display: flex;
@@ -95,7 +168,6 @@
             
     
             h1 {
-                font-size: 118px;
                 opacity: 0.7;
                 font-family: Playfair Display;
                 font-weight: 900;
@@ -110,7 +182,6 @@
                 font-size: 2rem;
                 font-weight: 300;
                 color: black;
-                // background: blue;
                 height: 50px;
                 padding-left: 10px;
             }

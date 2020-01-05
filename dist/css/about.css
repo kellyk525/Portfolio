@@ -1,3 +1,46 @@
+@media screen and (max-width: 850px) {
+  .about .contain {
+    flex-direction: column; }
+    .about .contain .profile-image {
+      margin: 0 0 7rem 0; }
+  .cornell {
+    margin-bottom: 25px;
+    padding-left: 23px;
+    padding-right: 23px; }
+  .portfolio-item {
+    flex-direction: column; }
+    .portfolio-item .portfolio-img {
+      flex-direction: column;
+      margin: 0 0 2rem 0;
+      order: 2; }
+      .portfolio-item .portfolio-img .ind-img {
+        min-width: 290px; }
+    .portfolio-item .portfolio-description {
+      margin: 0;
+      order: 1; }
+  .entry-text {
+    top: 51%;
+    padding-left: 25px;
+    padding-right: 25px; }
+  .entry-text h1 {
+    font-size: 13rem; }
+  .about-heading h1 {
+    font-size: 83px;
+    padding-left: 25px; }
+  .contact-heading h1 {
+    font-size: 50px;
+    letter-spacing: 14px; } }
+
+@media screen and (min-width: 800px) {
+  .about .contain {
+    flex-direction: row; }
+  .entry-text {
+    top: 40%; }
+  .about-heading h1 {
+    font-size: 118px; }
+  .contact-heading h1 {
+    font-size: 80px; } }
+
 .about .contain {
   display: flex;
   align-items: center;
@@ -59,7 +102,6 @@
     flex-direction: row;
     align-items: flex-end; }
     .contain .about-details .about-heading h1 {
-      font-size: 118px;
       opacity: 0.7;
       font-family: Playfair Display;
       font-weight: 900;
