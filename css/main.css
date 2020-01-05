@@ -162,10 +162,6 @@ p {
     height: 100%;
     background: url("../images/colorful.jpg") no-repeat center fixed;
     background-size: cover; }
-  .entry-text h1 {
-    font-size: 15rem; }
-  .entry-text h6 {
-    font-size: 1.7rem; }
   .top-nav {
     width: 200px;
     height: 50vh;
@@ -219,8 +215,6 @@ p {
     flex-direction: row; }
     .nav-list-social li {
       margin: 2rem 0; }
-  .about-heading h1 {
-    font-size: 8rem; }
   .section-heading h1 {
     font-size: 3rem; }
   .about-details .nav-list-social {
@@ -249,10 +243,24 @@ p {
     font-size: 1.4rem; }
   .navigation-link {
     font-size: 3.5rem; }
+  .timeline p {
+    font-size: 1.6rem; }
+  .timeline .date::before {
+    font-size: 1.4rem; }
+  form {
+    width: 100%; }
+  .up {
+    right: 2rem; } }
+
+@media screen and (max-width: 850px) {
   .about .contain {
     flex-direction: column; }
     .about .contain .profile-image {
       margin: 0 0 7rem 0; }
+  .cornell {
+    margin-bottom: 25px;
+    padding-left: 23px;
+    padding-right: 23px; }
   .portfolio-item {
     flex-direction: column; }
     .portfolio-item .portfolio-img {
@@ -264,14 +272,28 @@ p {
     .portfolio-item .portfolio-description {
       margin: 0;
       order: 1; }
-  .timeline p {
-    font-size: 1.6rem; }
-  .timeline .date::before {
-    font-size: 1.4rem; }
-  form {
-    width: 100%; }
-  .up {
-    right: 2rem; } }
+  .entry-text {
+    top: 51%;
+    padding-left: 25px;
+    padding-right: 25px; }
+  .entry-text h1 {
+    font-size: 13rem; }
+  .about-heading h1 {
+    font-size: 83px;
+    padding-left: 25px; }
+  .contact-heading h1 {
+    font-size: 50px;
+    letter-spacing: 14px; } }
+
+@media screen and (min-width: 800px) {
+  .about .contain {
+    flex-direction: row; }
+  .entry-text {
+    top: 40%; }
+  .about-heading h1 {
+    font-size: 118px; }
+  .contact-heading h1 {
+    font-size: 80px; } }
 
 .about .contain {
   display: flex;
@@ -334,7 +356,6 @@ p {
     flex-direction: row;
     align-items: flex-end; }
     .contain .about-details .about-heading h1 {
-      font-size: 118px;
       opacity: 0.7;
       font-family: Playfair Display;
       font-weight: 900;
@@ -372,7 +393,7 @@ header {
 
 @keyframes second {
   0% {
-    transform: translate(-100px); }
+    transform: translate(-200px); }
   100% {
     transform: translateX(0px); } }
 
@@ -381,7 +402,6 @@ header {
 
 .entry-text {
   position: absolute;
-  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -533,13 +553,24 @@ header {
         font-size: 5rem;
         margin: auto; }
 
+@media screen and (max-width: 850px) {
+  .contact-bottom {
+    flex-direction: column; }
+  .email-me div {
+    margin-bottom: 30px; }
+  .call-me div {
+    margin-bottom: 40px; } }
+
+@media screen and (min-width: 800px) {
+  .contact-bottom {
+    flex-direction: row; } }
+
 .contact {
   background-color: #040f34;
   background-color: transparent; }
 
 .contact-bottom {
   display: flex;
-  flex-direction: row;
   width: 84%;
   margin: 0 auto;
   margin-bottom: 50px; }
@@ -638,7 +669,6 @@ form {
   margin-bottom: 10rem;
   font-family: Playfair Display; }
   .contact-heading h1 {
-    font-size: 80px;
     letter-spacing: 5px;
     color: white;
     text-transform: uppercase;
@@ -663,25 +693,38 @@ form {
   background: blue;
   display: flex; }
 
-@media screen and (min-width: 610px) {
+@media screen and (max-width: 800px) {
   .portfolio-img {
-    flex-direction: row; } }
+    flex-direction: column;
+    align-items: center; }
+    .portfolio-img .ind-img {
+      margin-bottom: 10px;
+      margin-top: 10px;
+      min-width: 300px; } }
+
+@media screen and (min-width: 800px) {
+  .portfolio-img {
+    flex-direction: row;
+    justify-content: space-between; } }
 
 .portfolio-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 5rem;
   font-family: Assistant;
-  display: flex; }
+  padding: 20px;
+  background: rgba(96, 96, 96, 0.283);
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(153, 152, 152, 0.413);
+  width: 93%;
+  margin: 0 auto;
+  margin-bottom: 64px; }
   .portfolio-item .portfolio-img {
     flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
+    display: flex; }
     .portfolio-item .portfolio-img .ind-img {
-      width: 372px;
-      height: 256px;
+      width: 31.5%;
+      height: 240px;
       min-height: 225px; }
     .portfolio-item .portfolio-img img {
       width: 100%;
@@ -691,32 +734,40 @@ form {
       border-radius: 3px; }
   .portfolio-item .portfolio-description {
     flex: 1;
-    color: black; }
+    color: black;
+    padding-left: 13px; }
     .portfolio-item .portfolio-description h1 {
-      font-weight: 600;
+      font-weight: 300;
       margin: 1rem 0;
-      font-size: 35px;
+      margin-bottom: 5px;
+      font-size: 30px;
       letter-spacing: 3px;
-      font-family: Playfair Display; }
+      font-family: Overpass;
+      color: white; }
     .portfolio-item .portfolio-description h6 {
       font-size: 12px;
       text-transform: uppercase;
       font-weight: 300;
       opacity: 0.8;
       letter-spacing: 1px;
-      padding-top: 5px; }
+      padding-top: 5px;
+      color: white; }
     .portfolio-item .portfolio-description p {
-      font-size: 15px;
-      letter-spacing: 1px;
+      font-size: 13px;
+      letter-spacing: 2px;
       line-height: 30px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      font-family: Overpass;
+      font-weight: 100;
+      color: white; }
   .portfolio-item .portfolio-description .cta {
     display: inline-block;
     margin: 2.5rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     color: #222222;
-    transition: color 650ms; }
+    transition: color 650ms;
+    letter-spacing: 2px; }
   .portfolio-item .portfolio-description .cta:hover {
     color: #2f67cd; }
 
@@ -748,7 +799,7 @@ form {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: white;
+    background: rgba(240, 240, 240, 0.92);
     opacity: 0.97;
     padding: 4.4rem;
     display: flex;
@@ -758,15 +809,16 @@ form {
     transform: translateY(100%);
     transition: transform 0.5s; }
     .nav .nav-lists li {
-      font-size: 22px;
-      letter-spacing: 5px;
-      font-family: Overpass;
+      font-size: 20px;
+      letter-spacing: 9px;
+      font-family: Poiret One;
       padding: 20px 0px;
       text-align: center;
       font-weight: 900;
       text-shadow: -1px 0 rgba(181, 178, 178, 0.7), 0 1px rgba(181, 178, 178, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7); }
       .nav .nav-lists li a {
-        color: white; }
+        color: #c12b2b;
+        color: black; }
 
 .opens .fa-times {
   display: block; }
@@ -776,3 +828,13 @@ form {
 
 .opens .nav-lists {
   transform: translateY(0); }
+
+.social-link.resume {
+  color: rgba(255, 255, 255, 0.988);
+  padding: 6px 10px;
+  margin-left: 17px;
+  font-family: Overpass;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 14px;
+  border: 1px solid rgba(225, 221, 221, 0.562); }

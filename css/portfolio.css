@@ -1,22 +1,35 @@
-@media screen and (min-width: 610px) {
+@media screen and (max-width: 800px) {
   .portfolio-img {
-    flex-direction: row; } }
+    flex-direction: column;
+    align-items: center; }
+    .portfolio-img .ind-img {
+      margin-bottom: 10px;
+      margin-top: 10px;
+      min-width: 300px; } }
+
+@media screen and (min-width: 800px) {
+  .portfolio-img {
+    flex-direction: row;
+    justify-content: space-between; } }
 
 .portfolio-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 5rem;
   font-family: Assistant;
-  display: flex; }
+  padding: 20px;
+  background: rgba(96, 96, 96, 0.283);
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(153, 152, 152, 0.413);
+  width: 93%;
+  margin: 0 auto;
+  margin-bottom: 64px; }
   .portfolio-item .portfolio-img {
     flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
+    display: flex; }
     .portfolio-item .portfolio-img .ind-img {
-      width: 372px;
-      height: 256px;
+      width: 31.5%;
+      height: 240px;
       min-height: 225px; }
     .portfolio-item .portfolio-img img {
       width: 100%;
@@ -26,32 +39,40 @@
       border-radius: 3px; }
   .portfolio-item .portfolio-description {
     flex: 1;
-    color: black; }
+    color: black;
+    padding-left: 13px; }
     .portfolio-item .portfolio-description h1 {
-      font-weight: 600;
+      font-weight: 300;
       margin: 1rem 0;
-      font-size: 35px;
+      margin-bottom: 5px;
+      font-size: 30px;
       letter-spacing: 3px;
-      font-family: Playfair Display; }
+      font-family: Overpass;
+      color: white; }
     .portfolio-item .portfolio-description h6 {
       font-size: 12px;
       text-transform: uppercase;
       font-weight: 300;
       opacity: 0.8;
       letter-spacing: 1px;
-      padding-top: 5px; }
+      padding-top: 5px;
+      color: white; }
     .portfolio-item .portfolio-description p {
-      font-size: 15px;
-      letter-spacing: 1px;
+      font-size: 13px;
+      letter-spacing: 2px;
       line-height: 30px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      font-family: Overpass;
+      font-weight: 100;
+      color: white; }
   .portfolio-item .portfolio-description .cta {
     display: inline-block;
     margin: 2.5rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     color: #222222;
-    transition: color 650ms; }
+    transition: color 650ms;
+    letter-spacing: 2px; }
   .portfolio-item .portfolio-description .cta:hover {
     color: #2f67cd; }
 

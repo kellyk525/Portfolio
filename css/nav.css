@@ -10,7 +10,7 @@ header {
 
 @keyframes second {
   0% {
-    transform: translate(-100px); }
+    transform: translate(-200px); }
   100% {
     transform: translateX(0px); } }
 
@@ -19,7 +19,6 @@ header {
 
 .entry-text {
   position: absolute;
-  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
