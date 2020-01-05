@@ -24,6 +24,11 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        .ind-img {
+            margin-bottom: 15px;
+            // margin-top: 10px;
+        }
     }
 }
 
@@ -34,6 +39,7 @@
     justify-content: center;
     font-family: Assistant;
     padding: 20px;
+    padding-bottom: 5px;
     background: rgba(96, 96, 96, 0.283);
     border-radius: 5px;
     box-shadow: 1px 1px 10px rgba(153, 152, 152, 0.413);
