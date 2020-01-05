@@ -705,7 +705,8 @@ form {
 @media screen and (min-width: 800px) {
   .portfolio-img {
     flex-direction: row;
-    justify-content: space-between; } }
+    justify-content: space-between;
+    align-items: center; } }
 
 .portfolio-item {
   display: flex;
