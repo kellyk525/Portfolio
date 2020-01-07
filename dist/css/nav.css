@@ -36,7 +36,6 @@ header {
     letter-spacing: 6px;
     margin-bottom: 25px; }
   .entry-text h1:hover {
-    cursor: pointer;
     opacity: 0.4; }
   .entry-text h6 {
     font-size: 15px;
