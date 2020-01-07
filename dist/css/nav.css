@@ -29,7 +29,8 @@ header {
     font-family: 'Playfair Display';
     color: rgba(255, 255, 255, 0.906);
     text-shadow: -4px 0 rgba(75, 16, 16, 0.7), 0 2px 8px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7);
-    opacity: 0.25;
+    text-shadow: -3.2px 0 rgba(75, 16, 16, 0.7), 0 2px 8px rgba(75, 16, 16, 0.7), 1px 0 rgba(181, 178, 178, 0.7), 0 -1px rgba(181, 178, 178, 0.7);
+    opacity: 0.4;
     padding: 1rem;
     user-select: none;
     font-weight: 900;
